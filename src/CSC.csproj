@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <InvariantGlobalization>true</InvariantGlobalization>
+
+        <LangVersion>latest</LangVersion>
+        <TargetFrameworks>net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <AssemblyName>csc-wrapper</AssemblyName>
+        <ToolCommandName>csc</ToolCommandName>
+        <PackAsTool>true</PackAsTool>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>csc</PackageId>
+        <Authors>dotnetframework</Authors>
+        <Description>Provides a .NET tool wrapper to access csc (the C# compiler), from .NET's built-in Roslyn compiler platform.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/ascpixi/dotnet-csc</PackageProjectUrl>
+        <PackageTags>roslyn;compiler;csharp;tool;csc</PackageTags>
+        <RepositoryUrl>https://github.com/ascpixi/dotnet-csc</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageReadmeFile>readme.md</PackageReadmeFile>
+        <Version>1.0.0</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="./icon.png" Pack="true" PackagePath="/" />
+        <None Include="../readme.md" Pack="true" PackagePath="/" />
+    </ItemGroup>
+
+</Project>
